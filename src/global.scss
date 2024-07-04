@@ -1,0 +1,29 @@
+@font-face {
+  font-family: Roboto;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+}
+
+@import "./variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: $page_background;
+  color: white;
+  padding: 10px 24px;
+}
+
+::-webkit-scrollbar {
+  background-color: $page_background;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $color_dark;
+  border-radius: $rounded_radius;
+}
