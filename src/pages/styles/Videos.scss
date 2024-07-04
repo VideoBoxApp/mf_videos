@@ -1,0 +1,12 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.cardsBox{
+    display: flex;
+    justify-content: left;
+    gap: 50px;
+    flex-wrap: wrap;
+}
