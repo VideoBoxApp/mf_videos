@@ -24,6 +24,7 @@ export default function Header(type: number) {
 
   const brandLogo = document.createElement("div");
   brandLogo.classList.add("brandLogoHeader");
+  brandLogo.addEventListener("click", () => window.location.replace("/"));
 
   const navigationBox = document.createElement("div");
   navigationBox.classList.add("navigationBox");

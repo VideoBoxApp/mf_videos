@@ -40,7 +40,7 @@ export default function VideoCard(videoData: any) {
     videoData.snippet.thumbnails.default.url
   })`;
   card.addEventListener("click", () => {
-    getVideoPlayer(videoData?.id?.videoId);
+    getVideoPlayer(videoData?.id?.videoId || videoData?.id);
   });
 
   const favoriteIcon = document.createElement("i");
