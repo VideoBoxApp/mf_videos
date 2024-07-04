@@ -1,0 +1,38 @@
+@import "../../../variables";
+
+.searchBar {
+  padding-right: 15px ;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: rgb(34, 34, 34);
+  border-radius: $rounded_radius;
+}
+
+.searchField {
+  width: 100%;
+  background-color: $color_dark;
+  height: $interactives_height;
+  border-radius: $rounded_radius;
+  color: $color_text;
+  font-size: large;
+  padding: 10px;
+  border: none;
+  outline: none;
+  &:focus {
+    outline: 1px solid $color_border_focus_light;
+  }
+}
+
+.searchIcon {
+  height: 20px;
+  width: 20px;
+  background-image: url(../../../assets/searchIcon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}

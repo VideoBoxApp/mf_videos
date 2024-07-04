@@ -1,0 +1,60 @@
+@import "../../../variables";
+
+.cardBox {
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: $color_dark;
+  background-position: center;
+  background-size: cover;
+  border-radius: $rounded_radius;
+  border: 1px solid $color_dark;
+  cursor: pointer;
+
+  &:hover {
+    transition: 0.2s;
+    border: 1px solid $color_border_focus_light;
+  }
+}
+
+.heartIcon{
+  &:hover{
+    scale: 1.5;
+  }
+}
+
+.favorite {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 15px;
+  height: 15px;
+  background-image: url(../../../assets/hearthIcon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.not_favorite {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 15px;
+  height: 15px;
+  background-image: url(../../../assets/hearthIconOutlined.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.legendBox {
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+}

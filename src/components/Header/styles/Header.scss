@@ -1,0 +1,33 @@
+.header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+}
+
+.navigationBox {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.brandLogoHeader {
+  background-image: url(../../../assets/brandLogo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50px;
+  width: 160px;
+  cursor: pointer;
+}
+
+.menuIcon {
+  height: 20px;
+  width: 23px;
+  background-image: url(../../../assets/menuIcon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
