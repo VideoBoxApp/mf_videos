@@ -8,7 +8,7 @@ import { storeWireframe } from "@/store/wireframe.store";
 export default function VideoPlayer() {
   const videoPlayerBox = document.createElement("div");
   videoPlayerBox.classList.add("videoPlayerBox");
-  videoPlayerBox.id = "videoPlayerBox"
+  videoPlayerBox.id = "videoPlayerBox";
 
   const wireframe = document.createElement("div");
   wireframe.classList.add("wireframe");
@@ -18,10 +18,6 @@ export default function VideoPlayer() {
   actionsBox.classList.add("actionsBox");
   wireframe.appendChild(actionsBox);
 
-  const hearthIcon = document.createElement("i");
-  hearthIcon.classList.add("hearthIcon");
-  actionsBox.appendChild(hearthIcon);
-
   const closeIcon = document.createElement("i");
   closeIcon.classList.add("closeIcon");
   actionsBox.appendChild(closeIcon);
@@ -29,15 +25,13 @@ export default function VideoPlayer() {
     storeVideoPlayer.dispatch(hideVideoPlayer());
   });
 
+  let wireframeElement = document.createElement("div");
+  wireframeElement.classList.add("wireframeElement");
+  wireframe.appendChild(wireframeElement);
 
-
-  let wireframeElement = document.createElement("div")
-  wireframeElement.classList.add("wireframeElement")
-  wireframe.appendChild(wireframeElement)
-
-  storeWireframe.subscribe(()=>{
-    wireframeElement.innerHTML = storeWireframe.getState().value?.payload
-  })
+  storeWireframe.subscribe(() => {
+    wireframeElement.innerHTML = storeWireframe.getState().value?.payload;
+  });
 
   return videoPlayerBox;
 }
